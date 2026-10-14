@@ -1,5 +1,6 @@
-def total_salary(path):
-    if not path:
+def total_salary(path=None):
+    if path is None:
+        print("Шлях до файлу не вказано.")
         return (0, 0)
     
     total = 0
