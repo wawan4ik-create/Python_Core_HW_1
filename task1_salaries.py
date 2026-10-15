@@ -12,7 +12,7 @@ def total_salary(path=None):
             total += salary
             length += 1
 
-    return (total, total/length)
+    return (total, total/length if length != 0 else 0)
 
 
 if __name__ == '__main__':

@@ -7,7 +7,7 @@ def get_cats_info(path=None):
         cats_info = []
         for line in file:
             id, name, age = line.strip().split(',')
-            cats_info.append({'id': id, 'name': name, 'age': int(age)})
+            cats_info.append({'id': id, 'name': name, 'age': age})
     return cats_info
 
 
